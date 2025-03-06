@@ -1,0 +1,53 @@
+.experience-item {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 0;
+	font-family: Arial, sans-serif;
+}
+
+.experience-item:last-child {
+	border-bottom: none;
+}
+
+.experience-item p {
+	margin: 0;
+}
+
+.experience-header {
+	display: flex;
+	align-items: flex-start;
+	gap: 15px;
+}
+
+.experience-info {
+	display: flex;
+	flex-direction: column;
+}
+
+.experience-title {
+	font-size: 18px;
+	font-weight: 700;
+	margin-bottom: 3px;
+	margin-top: 0;
+}
+
+.experience-company {
+	font-size: 16px;
+}
+
+.experience-date {
+	font-size: 14px;
+}
+
+.experience-location {
+	font-size: 14px;
+	font-style: italic;
+}
+
+.experience-description {
+	font-size: 14px;
+	margin-top: 5px;
+	line-height: 1.5;
+}

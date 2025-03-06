@@ -1,0 +1,68 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "buntywp/experience-item",
+  "version": "0.1.0",
+  "title": "Experience",
+  "category": "widgets",
+  "icon": "businessman",
+  "description": "Experience Item.",
+  "example": {},
+  "supports": {
+    "html": false,
+    "spacing": {
+      "margin": true,
+      "padding": true
+    },
+    "color": {
+      "background": true,
+      "text": true,
+      "heading": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "Title"
+    },
+    "employmentType": {
+      "type": "string",
+      "default": "Full-time"
+    },
+    "company": {
+      "type": "string"
+    },
+    "startDate": {
+      "type": "string"
+    },
+    "endDate": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "locationType": {
+      "type": "string",
+      "default": "On-site"
+    },
+    "currentlyWorking": {
+      "type": "boolean",
+      "default": false
+    },
+    "description": {
+      "type": "string"
+    },
+    "isEditing": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "parent": [
+    "buntywp/experience-box"
+  ],
+  "textdomain": "experience-block",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js"
+}
