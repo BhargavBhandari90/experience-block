@@ -7,7 +7,9 @@ export default function Experience( props ) {
 	}
 
 	const formatDate = ( dateString ) => {
-		if ( ! dateString ) { return '' };
+		if ( ! dateString ) {
+			return '';
+		}
 		const date = new Date( dateString + '-01' ); // Add day for parsing
 		return date.toLocaleDateString( 'en-US', {
 			year: 'numeric',

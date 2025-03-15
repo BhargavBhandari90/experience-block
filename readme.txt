@@ -1,6 +1,7 @@
 === Experience Block ===
 Contributors:      bhargavbhandari90, biliplugins
-Tags:              block, experience, proffesional experience
+Donate link:       https://www.paypal.me/BnB90/50
+Tags:              block, experience, professional experience, blocks
 Requires at least: 6.6
 Tested up to:      6.7
 Stable tag:        1.0.0
@@ -26,6 +27,9 @@ Elevate your website with a custom WordPress block designed to highlight profess
 2. Add Experience Box
 3. Add data to Experience Item by clicking on pencil icon
 4. How it looks on frontend
+
+== GitHub Repo ==
+https://github.com/BhargavBhandari90/experience-block
 
 == Changelog ==
 
