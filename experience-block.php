@@ -3,7 +3,7 @@
  * Plugin Name:       Experience Block
  * Description:       Showcase professional experience with a custom WordPress block featuring job titles, company names, dates, descriptions, and media uploads, inspired by LinkedIn's experience section.
  * Version:           1.0.0
- * Requires at least: 6.7
+ * Requires at least: 6.6
  * Requires PHP:      7.4
  * Author:            Bunty
  * Author URI:        https://biliplugins.com
