@@ -1,9 +1,9 @@
 === Experience Block ===
 Contributors:      bhargavbhandari90, biliplugins
-Tags:              block, experience, proffesional experience, block
-Requires at least: 6.7
-Tested up to:      6.7.2
-Stable tag:        0.1.0
+Tags:              block, experience, proffesional experience
+Requires at least: 6.6
+Tested up to:      6.7
+Stable tag:        1.0.0
 License:           GPL-2.0-or-later
 Requires PHP:      7.4
 License URI:       https://www.gnu.org/licenses/gpl-2.0.html
@@ -29,5 +29,5 @@ Elevate your website with a custom WordPress block designed to highlight profess
 
 == Changelog ==
 
-= 0.1.0 =
+= 1.0.0 =
 * Inital Release
