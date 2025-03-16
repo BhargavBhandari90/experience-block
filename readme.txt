@@ -29,7 +29,7 @@ Elevate your website with a custom WordPress block designed to highlight profess
 4. How it looks on frontend
 
 == GitHub Repo ==
-https://github.com/BhargavBhandari90/experience-block
+[https://github.com/BhargavBhandari90/experience-block](https://github.com/BhargavBhandari90/experience-block)
 
 == Changelog ==
 
