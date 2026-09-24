@@ -1,4 +1,6 @@
 import { RichText } from '@wordpress/block-editor';
+import { __ } from '@wordpress/i18n';
+
 export default function Experience( props ) {
 	const data = props.experience;
 
@@ -28,7 +30,7 @@ export default function Experience( props ) {
 					<p className="experience-date">
 						{ formatDate( data.startDate ) } -{ ' ' }
 						{ data.currentlyWorking
-							? 'Present'
+							? __( 'Present', 'experience-block' )
 							: formatDate( data.endDate ) }
 					</p>
 					<p className="experience-location">
