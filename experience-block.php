@@ -19,18 +19,23 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Registers the block using the metadata loaded from the `block.json` file.
- * Behind the scenes, it registers also all assets so they can be enqueued
- * through the block editor in the corresponding context.
+ * Registers the blocks using the metadata loaded from their `block.json`
+ * files. Behind the scenes, it registers also all assets so they can be
+ * enqueued through the block editor in the corresponding context, and
+ * sets up translations for each block's editor script.
+ *
+ * @since 1.0.0
  *
  * @see https://developer.wordpress.org/reference/functions/register_block_type/
+ * @see https://developer.wordpress.org/reference/functions/wp_set_script_translations/
  */
 function buntywp_experience_block_block_init() {
 
-	register_block_type( __DIR__ . '/build/experience-box', array( 'editor_script' => 'xperience-block-script' ) );
-	register_block_type( __DIR__ . '/build/experience-item', array( 'editor_script' => 'xperience-block-script' ) );
+	register_block_type( __DIR__ . '/build/experience-box' );
+	register_block_type( __DIR__ . '/build/experience-item' );
 
-	wp_set_script_translations( 'experience-block-script', 'experience-block' );
+	wp_set_script_translations( 'buntywp-experience-box-editor-script', 'experience-block' );
+	wp_set_script_translations( 'buntywp-experience-item-editor-script', 'experience-block' );
 }
 
 add_action( 'init', 'buntywp_experience_block_block_init' );
