@@ -4,10 +4,14 @@ import {
 	CheckboxControl,
 	SelectControl,
 	TextControl,
-	__experimentalSpacer as Spacer,
-	__experimentalDivider as Divider,
 	Button,
 	Icon,
+	/*
+	 * No stable replacement exists yet as of WP 7.1.2; Divider still
+	 * only ships under this experimental name in @wordpress/components.
+	 */
+	// eslint-disable-next-line @wordpress/no-unsafe-wp-apis
+	__experimentalDivider as Divider,
 } from '@wordpress/components';
 import { edit, arrowLeft } from '@wordpress/icons';
 import './editor.scss';
@@ -27,8 +31,6 @@ export default function Edit( { attributes, setAttributes, isSelected } ) {
 		isEditing,
 	} = attributes;
 
-	const marginBottom = 0;
-
 	return (
 		<div { ...useBlockProps() }>
 			{ isSelected && isEditing ? (
@@ -45,7 +47,6 @@ export default function Edit( { attributes, setAttributes, isSelected } ) {
 						value={ title }
 						onChange={ ( val ) => setAttributes( { title: val } ) }
 					/>
-					<Spacer marginBottom={ marginBottom } />
 					<SelectControl
 						__next40pxDefaultSize
 						__nextHasNoMarginBottom
@@ -91,7 +92,6 @@ export default function Edit( { attributes, setAttributes, isSelected } ) {
 							setAttributes( { employmentType: val } )
 						}
 					/>
-					<Spacer marginBottom={ marginBottom } />
 					<TextControl
 						label={ __( 'Company Name', 'experience-block' ) }
 						value={ company }
@@ -99,7 +99,6 @@ export default function Edit( { attributes, setAttributes, isSelected } ) {
 							setAttributes( { company: val } )
 						}
 					/>
-					<Spacer marginBottom={ marginBottom } />
 					<CheckboxControl
 						label={ __( 'Currently Working', 'experience-block' ) }
 						value="present"
@@ -108,7 +107,6 @@ export default function Edit( { attributes, setAttributes, isSelected } ) {
 							setAttributes( { currentlyWorking: val } )
 						}
 					/>
-					<Spacer marginBottom={ marginBottom } />
 					<TextControl
 						label={ __( 'Start Date', 'experience-block' ) }
 						type="month"
@@ -117,7 +115,6 @@ export default function Edit( { attributes, setAttributes, isSelected } ) {
 							setAttributes( { startDate: val } )
 						}
 					/>
-					<Spacer marginBottom={ marginBottom } />
 					{ ! currentlyWorking && (
 						<>
 							<TextControl
@@ -128,7 +125,6 @@ export default function Edit( { attributes, setAttributes, isSelected } ) {
 									setAttributes( { endDate: val } )
 								}
 							/>
-							<Spacer marginBottom={ marginBottom } />
 						</>
 					) }
 					<TextControl
@@ -138,7 +134,6 @@ export default function Edit( { attributes, setAttributes, isSelected } ) {
 							setAttributes( { location: val } )
 						}
 					/>
-					<Spacer marginBottom={ marginBottom } />
 					<SelectControl
 						__next40pxDefaultSize
 						__nextHasNoMarginBottom
@@ -169,7 +164,6 @@ export default function Edit( { attributes, setAttributes, isSelected } ) {
 							setAttributes( { locationType: val } )
 						}
 					/>
-					<Spacer marginBottom={ marginBottom } />
 					<RichText
 						tagName="p"
 						placeholder={ __( 'Description', 'experience-block' ) }

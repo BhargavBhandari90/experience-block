@@ -1,3 +1,9 @@
 node_modules
 package-lock.json
 .DS_Store
+
+# Composer
+/vendor/
+
+# PHPCS cache
+.phpcs-cache

@@ -19,5 +19,8 @@
 	},
 	"dependencies": {
 		"@wordpress/icons": "^10.19.0"
+	},
+	"overrides": {
+		"typescript": "^5.3.3"
 	}
 }

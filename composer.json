@@ -1,0 +1,35 @@
+{
+	"name": "biliplugins/experience-block",
+	"description": "Showcase professional experience with a WordPress block having title, company name, date and description, inspired by LinkedIn's experience section.",
+	"type": "wordpress-plugin",
+	"license": "GPL-2.0-or-later",
+	"homepage": "https://wordpress.org/plugins/experience-block/",
+	"authors": [
+		{
+			"name": "Bunty",
+			"homepage": "https://biliplugins.com"
+		}
+	],
+	"require": {
+		"php": ">=7.4"
+	},
+	"require-dev": {
+		"squizlabs/php_codesniffer": "^3.9",
+		"wp-coding-standards/wpcs": "^3.1",
+		"phpcompatibility/phpcompatibility-wp": "^2.1",
+		"dealerdirect/phpcodesniffer-composer-installer": "^1.0"
+	},
+	"config": {
+		"allow-plugins": {
+			"dealerdirect/phpcodesniffer-composer-installer": true
+		},
+		"platform": {
+			"php": "7.4"
+		}
+	},
+	"scripts": {
+		"lint": "phpcs",
+		"lint:fix": "phpcbf",
+		"compat": "phpcs --standard=PHPCompatibilityWP --runtime-set testVersion 7.4- --extensions=php --ignore=vendor,build,node_modules ."
+	}
+}
